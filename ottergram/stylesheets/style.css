@@ -23,7 +23,6 @@ body {
   padding: 4px 10px;
   background: rgb(96, 125, 139);
   color: rgb(202, 238, 255);
-
   font-size: 18px;
 }
 
@@ -42,7 +41,6 @@ a {
 }
 .logo-text {
   background: white;
-
   text-align: center;
   text-transform: uppercase;
   font-family: lakeshore;
@@ -52,29 +50,40 @@ a {
   display: block;
   width: 100%;
 }
-
+/*
 .thumbnail-item+.thumbnail-item {
   margin-top: 10px;
-}
+}*/
 
 .thumbnail-item {
   display: inline-block;
-  width: 120px;
+  /*width: 120px;*/
+  min-width: 120px;
+  max-width: 120px;
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
 
 .thumbnail-list {
   flex: 0 1 auto;
+  order: 2;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   padding: 0px;
-
   white-space: nowrap;
   overflow-x: auto;
 }
 
 .detail-image-container {
   flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-image-frame {
+  text-align: center;
 }
 .detail-image {
   width: 90%;
